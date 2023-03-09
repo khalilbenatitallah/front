@@ -11,6 +11,10 @@ import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
 import { BoardAdminComponent } from './board-admin/board-admin.component';
 import { AuthGuard } from './_services/auth.guard';
+import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
+import { TutorialDetailsComponent } from './components/tutorial-details/tutorial-details.component';
+import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.component';
+import { ImageUploadComponent } from './image-upload/image-upload.component';
 
 
 const routes: Routes = [
@@ -26,8 +30,10 @@ const routes: Routes = [
 
 
   { path: 'admin', component: BoardAdminComponent , canActivate: [AuthGuard] },
-
-
+  { path: 'image', component: ImageUploadComponent},
+  { path: 'tutorials', component: TutorialsListComponent },
+  { path: 'tutorials/:id', component: TutorialDetailsComponent },
+  { path: 'add', component: AddTutorialComponent },
 
   {path:'cart',component:CartComponent}
 ];

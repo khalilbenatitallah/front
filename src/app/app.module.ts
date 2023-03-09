@@ -20,6 +20,10 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { RouterModule, Routes } from '@angular/router';
+import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.component';
+import { TutorialDetailsComponent } from './components/tutorial-details/tutorial-details.component';
+import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
+import { ImageUploadComponent } from './image-upload/image-upload.component';
 
 
 
@@ -38,8 +42,11 @@ import { RouterModule, Routes } from '@angular/router';
     RegisterComponent,
     ProfileComponent,
     BoardAdminComponent,
-
-    ContactComponent
+    AddTutorialComponent,
+    TutorialDetailsComponent,
+    TutorialsListComponent,
+    ContactComponent,
+    ImageUploadComponent
 
 
   ],
